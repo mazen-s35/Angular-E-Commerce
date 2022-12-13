@@ -1,0 +1,15 @@
+.nav {
+    background: linear-gradient(to right, #950b0b, #440606);
+    color: #fff;
+    justify-content: space-between;
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        .colum {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

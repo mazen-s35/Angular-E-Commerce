@@ -1,0 +1,21 @@
+<mat-toolbar class="nav ">
+    <mat-toolbar-row class="content container">
+        <h2>Angular E-Commerce</h2>
+        <button mat-icon-button>
+            <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+        </button>
+    </mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container>
+    <mat-sidenav #sidenav>
+        <mat-nav-list class="colum">
+            <a routerLink="products" class="d-block">Products</a>
+            <a routerLink="cart">Cart</a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="container" style="height: auto;">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
